@@ -24,9 +24,10 @@
 		setTimeout(() => (showTitle = false), 1500);
 	});
 
-	onDestroy(() =>
-		window.removeEventListener("resize", setGameSize)
-	);
+	onDestroy(() => {
+		window.removeEventListener("resize", setGameSize);
+		clearInterval(interval);
+	});
 
 	function clearState() {
 		state = new Array(gameSize.x)
