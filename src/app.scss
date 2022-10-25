@@ -1,0 +1,21 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--bg-color: #111;
+	--primary-color: orangered;
+	--secondary-color: hsl(210, 38%, 45%);
+	--secondary-color-light: hsl(210, 38%, 60%);
+	--cell-color: #333;
+}
+
+body {
+	background-color: var(--bg-color);
+	color: white;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	display: flex;
+	justify-content: center;
+}
