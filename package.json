@@ -7,9 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
   },
   "devDependencies": {
+    "@playwright/test": "^1.27.1",
     "@sveltejs/vite-plugin-svelte": "^1.0.2",
     "@tsconfig/svelte": "^3.0.0",
     "sass": "^1.55.0",
